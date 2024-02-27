@@ -1,0 +1,125 @@
+/* тело всей страницы */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0;
+    overflow: hidden; /* Предотвращаем прокрутку, чтобы фон и видео занимали весь экран */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Устанавливаем z-index на значение меньше 0, чтобы поместить видео под другие элементы */
+}
+  
+/* заголовок */
+h1 {
+    color: #ffd700; /* цвет */
+    text-align: center;
+    margin-bottom: 40px; /* увеличение нижнего отступа */
+}
+
+/* Навигация */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* расстояние от навигации до инфы */
+    font-size: 40px; /* размер шрифта */
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.tab:hover {
+    background-color: #555; /* цвет при наведении */
+}
+
+.active-tab {
+    background-color: #555; /* цвет когда выбрал*/
+}
+
+.content {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+}
+
+.content.active {
+    display: flex; /* Отображение содержимого как гибкого контейнера */
+    flex-direction: row; /* Располагаем содержимое горизонтально */
+}
+
+/* Стили для фотографии сотрудника */
+.співробітник img {
+    width: 150px; /* ширина */
+    height: 150px; /* высота */
+    object-fit: cover; /* Заполнение контейнера, сохраняя соотношение сторон */
+    border-radius: 50%;
+    margin: 0 auto 10px; /* Центрирование по горизонтали и добавление отступа снизу */
+}
+
+.співробітник {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Ограничение максимальной ширины для карточки (настройте по своему усмотрению) */
+    margin: 20px;
+    padding: 20px; /* размер карточки */
+    border: 1px solid #8e0b0b; /* Добавление границы */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+    text-align: left; /* Выравнивание текста по центру */
+}
+
+.співробітник span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.співробітник .ПІБ {
+    font-size: 18px; /* Размер шрифта */
+    font-style: italic; /* Курсив */
+    font-weight: bold; /* Жирный шрифт */
+    color: #e84a5f;
+}
+
+.співробітник .Посада {
+    font-weight: bold; /* Жирный шрифт */
+    color: #00bfff;
+}
+
+.співробітник .Стать {
+    font-weight: bold; /* Жирный шрифт */
+    color: #fac05e;
+}
+
+.співробітник .дата_зарахування_у_фірму,
+.співробітник .дата_зарахування_у_фірму {
+    color: #fff;
+    font-weight: bold; /* Жирный шрифт */
+}
+
+/* Стили для нижнего бара */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 1; /* Устанавливаем z-index на значение больше 0, чтобы поместить бар над видео */
+}

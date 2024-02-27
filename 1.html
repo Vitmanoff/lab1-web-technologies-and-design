@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Company Information</title>
+</head>
+<body>
+
+<h1>Company Information</h1>
+
+<!-- Вкладки и контент вкладок -->
+<div class="tabs-content-container">
+    <div class="tabs">
+        <div class="tab active-tab" onclick="showTab('it')">IT відділ</div>
+        <div class="tab" onclick="showTab('qa')">QA відділ</div>
+    </div>
+
+    <div id="it" class="content">
+        <div class="співробітник">
+            <img src="image\Petrenko Viktor.jpg" alt="Фото Віктора" class="фото">
+            <span class="ПІБ">Петренко Віктор Петрович</span>
+            <span class="Посада">CEO</span>
+            <span class="Стать">Чоловік</span>
+            <span class="дата_народження">День народження: 08.06.2005</span>
+            <span class="дата_зарахування_у_фірму">Прийшов у компанію: 26.02.2024</span>
+        </div>
+
+        <div class="співробітник">
+            <img src="image\Grigorovich Artem Ivanovich.jpg" alt="Фото Grigorovich Artem Ivanovich.jpg" class="фото">
+                <span class="ПІБ">Григорович Артем Іванович</span>
+                <span class="Посада">Middle</span>
+                <span class="Стать">Чоловік</span>
+                <span class="дата_народження"> День народження: 07.09.2002</span>
+                <span class="дата_зарахування_у_фірму">Прийшов у компанію: 28.02.2024</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="qa" class="content">
+        <div class="співробітник">
+            <img src="image\Petrenko Viktoria.jpg" alt="Фото Вікторії" class="фото">
+            <span class="ПІБ">Петренко Вікторія Василівна</span>
+            <span class="Посада">QA Tech Lead</span>
+            <span class="Стать">Жінка</span>
+            <span class="дата_народження">День народження: 06.08.2005</span>
+            <span class="дата_зарахування_у_фірму">Прийшла у компанію: 27.02.2024</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Vitmanoff Company. Все права защищены.
+</footer>
+
+<video autoplay loop id="background-video">
+    <source src="image/ООО.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    
+    <div class="overlay">
+        <footer>
+            &copy; 2024 Vitmanoff Company. Все права защищены.
+        </footer>
+    </div>
+</video>
+
+<script>
+    // Функция для отображения выбранной вкладки
+    function showTab(tabName) {
+        // Скрыть все вкладки
+        var tabs = document.getElementsByClassName('content');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
+
+        // Отобразить выбранную вкладку
+        document.getElementById(tabName).classList.add('active');
+
+        // Выделить активную вкладку
+        var tabButtons = document.getElementsByClassName('tab');
+        for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].classList.remove('active-tab');
+        }
+        document.querySelector('[onclick="showTab(\'' + tabName + '\')"]').classList.add('active-tab');
+    }
+</script>
+
+</body>
+</html>
