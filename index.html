@@ -9,7 +9,7 @@
 <body>
 
 <h1>Company Information</h1>
-
+<button id="play-button" onclick="playVideo()">Play Video</button>
 <!-- Вкладки и контент вкладок -->
 <div class="tabs-content-container">
     <div class="tabs">
@@ -50,41 +50,13 @@
     </div>
 </div>
 
+<video id="background-video" autoplay loop>
+    <source src="image/ООО.mp4" type="video/mp4">
+</video>
+
 <footer>
     &copy; 2024 Vitmanoff Company. Все права защищены.
 </footer>
-
-<video autoplay loop id="background-video">
-    <source src="image/ООО.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    
-    <div class="overlay">
-        <footer>
-            &copy; 2024 Vitmanoff Company. Все права защищены.
-        </footer>
-    </div>
-</video>
-
-<script>
-    // Функция для отображения выбранной вкладки
-    function showTab(tabName) {
-        // Скрыть все вкладки
-        var tabs = document.getElementsByClassName('content');
-        for (var i = 0; i < tabs.length; i++) {
-            tabs[i].classList.remove('active');
-        }
-
-        // Отобразить выбранную вкладку
-        document.getElementById(tabName).classList.add('active');
-
-        // Выделить активную вкладку
-        var tabButtons = document.getElementsByClassName('tab');
-        for (var i = 0; i < tabButtons.length; i++) {
-            tabButtons[i].classList.remove('active-tab');
-        }
-        document.querySelector('[onclick="showTab(\'' + tabName + '\')"]').classList.add('active-tab');
-    }
-</script>
 
 </body>
 </html>

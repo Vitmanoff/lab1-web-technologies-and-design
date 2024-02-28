@@ -123,3 +123,23 @@ footer {
     padding: 10px;
     z-index: 1; /* Устанавливаем z-index на значение больше 0, чтобы поместить бар над видео */
 }
+
+/* Стили для кнопки проигрывания видео, потом удалить все что ниже */
+#play-button {
+    position: absolute;
+    top: 100px; /* Регулируйте это значение в зависимости от ваших потребностей */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#play-button:hover {
+    background-color: #777;
+}
