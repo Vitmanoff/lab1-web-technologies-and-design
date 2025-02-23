@@ -1,62 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="script.js"></script>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Company Information</title>
+    <script src="script.js"></script>
 </head>
 <body>
-
-<h1>Company Information</h1>
-<button id="play-button" onclick="playVideo()">Нажми на меня</button>
-<!-- Вкладки и контент вкладок -->
-<div class="tabs-content-container">
-    <div class="tabs">
-        <div class="tab active-tab" onclick="showTab('it')">IT відділ</div>
-        <div class="tab" onclick="showTab('qa')">QA відділ</div>
+    <div class="співробітник">
+        <img src="image/Petrenko Viktor.jpg" alt="Фото Віктора" class="фото">
+        <span class="ПІБ">Петренко Віктор Петрович</span>
+        <span class="Заголовок">Про себе</span>
+        <span class="Текст">Я Віктор, студент 3 курсу ПДАБА, мені 19 років. Люблю занурюватися у світ Unity та створювати ігри. Також обожнюю слухати музику та відкривати для себе щось нове!</span>
+        <span class="Заголовок">Освіта</span>
+        <span class="Текст"><strong>Навчальний заклад:</strong> Придніпровська державна академія будівництва та архітектури</span>
+        <span class="Текст"><strong>Спеціальність:</strong> Комп'ютерні науки</span>
+        <span class="Заголовок">Навички</span>
+        <span class="Текст">C#, Unity, C++, JavaScript, HTML, CSS</span>
     </div>
-
-    <div id="it" class="content">
-        <div class="співробітник">
-            <img src="image\Petrenko Viktor.jpg" alt="Фото Віктора" class="фото">
-            <span class="ПІБ">Петренко Віктор Петрович</span>
-            <span class="Посада">CEO</span>
-            <span class="Стать">Чоловік</span>
-            <span class="дата_народження">День народження: 08.06.2005</span>
-            <span class="дата_зарахування_у_фірму">Прийшов у компанію: 26.02.2024</span>
-        </div>
-
-        <div class="співробітник">
-            <img src="image\Grigorovich Artem Ivanovich.jpg" alt="Фото Grigorovich Artem Ivanovich.jpg" class="фото">
-                <span class="ПІБ">Григорович Артем Іванович</span>
-                <span class="Посада">Middle</span>
-                <span class="Стать">Чоловік</span>
-                <span class="дата_народження"> День народження: 07.09.2002</span>
-                <span class="дата_зарахування_у_фірму">Прийшов у компанію: 28.02.2024</span>
-            </div>
-        </div>
-    </div>
-
-    <div id="qa" class="content">
-        <div class="співробітник">
-            <img src="image\Petrenko Viktoria.jpg" alt="Фото Вікторії" class="фото">
-            <span class="ПІБ">Петренко Вікторія Василівна</span>
-            <span class="Посада">QA Tech Lead</span>
-            <span class="Стать">Жінка</span>
-            <span class="дата_народження">День народження: 06.08.2005</span>
-            <span class="дата_зарахування_у_фірму">Прийшла у компанію: 27.02.2024</span>
-        </div>
-    </div>
-</div>
-
-<video id="background-video" autoplay loop>
-    <source src="image/ООО.mp4" type="video/mp4">
-</video>
-
-<footer>
-    &copy; 2024 Vitmanoff Company. Все права защищены.
-</footer>
-
 </body>
 </html>
