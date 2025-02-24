@@ -1,6 +1,6 @@
 body {
     background-color: #f5eeee;
-    color: #fff;
+    color: #3b3535;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -30,7 +30,76 @@ body {
     background-color: #555;
 }
 
-.content {
-    flex-grow: 1;
-    padding: 20px;
+main {
+    max-width: 800px;
+    padding: 20px; 
+    margin: 0 auto; /* Центрирование */
+}
+
+h1 {
+    text-align: center; /* Выравнивание по центру */
+    font-size: 36px;
+    color: #0b65b9;
+}
+
+h2 {
+    text-align: center; /* Выравнивание по центру */
+    font-size: 28px;
+    color: #0b65b9;
+}
+
+ol, ul {
+    padding: 0px;
+    list-style-position: inside;
+}
+
+ol li, ul li {
+    background: white;
+    margin: 10px 0; /* Отступы между элементами */
+    padding: 10px; /* Oтступы в элементе */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.2s; /* Плавное увеличение при наведении */
+}
+
+ol li:hover, ul li:hover {
+    transform: scale(1.02); /* Увеличение элемента при наведении */
+    background-color: #eef3ff; /* Изменение цвета фона при наведении */
+}
+
+dl {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 15px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
