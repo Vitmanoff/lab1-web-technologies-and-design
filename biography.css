@@ -14,9 +14,8 @@ body {
 
 .banner {
     width: 100%;
-    background-color: #333;
+    background-color: #1a1a1a;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: flex-start;
     position: fixed;
@@ -26,6 +25,8 @@ body {
 }
 
 .menu-button {
+    display: flex;
+    align-items: center;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -36,6 +37,12 @@ body {
 
 .menu-button:hover {
     background-color: #555;
+}
+
+.menu-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Уменьшено расстояние между иконкой и текстом */
 }
 
 .співробітник img {
@@ -78,13 +85,6 @@ body {
     font-style: italic;
     font-weight: bold;
     color: #e84a5f;
-}
-
-.співробітник .Освіта,
-.співробітник .Спеціальність,
-.співробітник .Навички {
-    font-weight: bold;
-    color: #00bfff;
 }
 
 .співробітник .Заголовок {
