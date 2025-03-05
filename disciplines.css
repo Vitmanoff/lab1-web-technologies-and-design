@@ -1,59 +1,7 @@
-body {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
-
-.banner {
-    width: 100%;
-    background-color: #1a1a1a;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.menu-button {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.menu-button .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px; /* Уменьшено расстояние между иконкой и текстом */
-}
-
-.menu-button:hover {
-    background-color: #555;
-}
-
 main {
     max-width: 800px;
     padding: 20px; 
-    margin: 0 auto; /* Центрирование */
-}
-
-h1 {
-    text-align: center; /* Выравнивание по центру */
-    font-size: 36px;
-    color: #e84a5f;
-}
-
-h2 {
-    text-align: center; /* Выравнивание по центру */
-    font-size: 28px;
-    color: #e84a5f;
+    margin: 50px auto 0 auto; /* Центрирование и отступ сверху */
 }
 
 ol, ul {
@@ -84,7 +32,7 @@ dl {
 
 dt {
     font-weight: bold;
-    color: #00bfff;
+    color: #0066FF;
     margin-top: 10px;
 }
 
