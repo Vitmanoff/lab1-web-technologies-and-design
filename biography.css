@@ -19,7 +19,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: box-shadow 0.7s ease-in-out; 
-    margin-top: 80px; /* Отступ сверху для учёта фиксированного баннера */
     margin-left: auto;
     margin-right: auto; /* Центрирование по горизонтали */
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <title>Фрейми</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh; /* высота body на 100% высоты окна */
+            overflow: hidden; /* -прокрутка */
+        }
+
+        .nav-links {
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background-color: #777;
+        }
+
+        .frames {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            height: calc(100% - 60px); /* Высота фреймов с учетом высоты навигации */
+        }
+
+        iframe {
+            flex: 1;
+            height: 100%;
+            border: 2px solid #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="banner">
+            <a href="index.html" class="menu-button">
+                <img src="image/home.png" alt="Меню" class="icon"> Меню
+            </a>
+        </div>
+    </header>
+    <div class="nav-links">
+        <a href="biography.html" target="frame1">Біографія → Фрейм 1</a>
+        <a href="components.html" target="frame2">Комплектуючі → Фрейм 2</a>
+        <a href="disciplines.html" target="frame3">Дисципліни → Фрейм 3</a>
+        <a href="shadow.html" target="frame1">Тінь → Фрейм 1</a>
+        <a href="Block.html" target="frame2">Блоки → Фрейм 2</a>
+        <a href="custom-marker.html" target="frame3">Маркер → Фрейм 3</a>
+    </div>
+
+    <!-- Фреймы -->
+    <div class="frames">
+        <iframe src="biography.html" name="frame1" title="Фрейм 1"></iframe>
+        <iframe src="components.html" name="frame2" title="Фрейм 2"></iframe>
+        <iframe src="disciplines.html" name="frame3" title="Фрейм 3"></iframe>
+    </div>
+
+</body>
+</html>

@@ -40,6 +40,26 @@
     border-radius: 50%;
 }
 
-main {
-    margin-top: 60px; 
+@media (max-width: 600px) {
+    .custom-list {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .custom-list li {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .custom-list li::before {
+        left: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .menu-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }

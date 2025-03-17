@@ -1,7 +1,13 @@
 main {
     display: flex;
-    margin-top: 58px; /* Чтобы контент не залезал под фиксированный header */
     flex-direction: row; /* горизонтальное размещение по умолчанию */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 /* Боковая панель */

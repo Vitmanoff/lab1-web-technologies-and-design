@@ -1,7 +1,7 @@
 table {
     border-collapse: collapse;
     width: 90%;
-    margin: 80px auto 20px auto; /* Добавлен отступ сверху */
+    margin: 20px auto; /* Добавлен отступ сверху */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
     color: #fff;
     background-color: #444;
@@ -43,7 +43,7 @@ tr:nth-child(even) {
 @media (max-width: 600px) {
     table {
         width: 100%;
-        margin: 10px 0;
+        margin: 70px 0 10px 0; /* Увеличен отступ сверху для учёта баннера */
     }
 
     th, td {
