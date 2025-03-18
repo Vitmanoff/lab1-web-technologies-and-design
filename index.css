@@ -1,13 +1,14 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; /* Высота на весь экран */
+    overflow: hidden; /* -прокрутку */
+}
+
 main {
     display: flex;
     flex-direction: row; /* горизонтальное размещение по умолчанию */
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100vh; /* минимальная высота равна высоте экрана */
 }
 
 /* Боковая панель */
@@ -15,10 +16,10 @@ html, body {
     background-color: #1a1a1a;
     padding: 20px;
     position: sticky;
-    top: 58px; /* Фиксация сайдбара при прокрутке */
+    top: 60px; /* для отступа от банера */
     width: 220px;
-    height: 100vh; /* Полная высота */
-    overflow-y: auto; /* Прокрутка, если контент не влезет */
+    height: calc(100vh - 60px); 
+    overflow-y: auto;
 }
 
 .sidebar ul {
