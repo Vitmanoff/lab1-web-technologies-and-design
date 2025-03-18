@@ -189,7 +189,7 @@ tr:nth-child(even) {
 @media (max-width: 600px) {
     table {
         width: 100%;
-        margin: 70px 0 10px 0; /* Увеличен отступ сверху для учёта баннера */
+        margin: 10px 0 10px 0; /* отступ сверху для учёта баннера */
     }
 
     th, td {
